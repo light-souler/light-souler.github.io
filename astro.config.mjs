@@ -40,6 +40,8 @@ export default defineConfig({
         borderRadius: '0rem',
         frameBoxShadowCssValue: 'none',
         editorBackground: '#b3b6b42e',
+        editorTabBorderRadius: '0',
+        
       },
     },
   }), mdx()],
