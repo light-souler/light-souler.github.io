@@ -39,6 +39,8 @@ export default defineConfig({
       frames: {
         frameBoxShadowCssValue: 'none',
         borderColor: 'black',
+        borderStyle: 'solid',
+        codeBackground: '#b3b6b42e'
       },
     },
   }), mdx()],
