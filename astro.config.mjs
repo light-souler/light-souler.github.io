@@ -40,7 +40,6 @@ export default defineConfig({
        
       frames: {
         inlineButtonBackgroundIdleOpacity: '1',
-        inlineButtonBorderOpacity: '1',
         frameBoxShadowCssValue: 'none',
         editorBackground: '#00000007',
         editorTabBorderRadius: '0',
