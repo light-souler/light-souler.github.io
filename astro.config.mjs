@@ -39,7 +39,7 @@ export default defineConfig({
       borderRadius: '0rem',
       frames: {
         frameBoxShadowCssValue: 'none',
-        editorBackground: '#b3b6b42e',
+        editorBackground: '#00000007',
         editorTabBorderRadius: '0',
         
       },
