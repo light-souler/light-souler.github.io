@@ -36,7 +36,6 @@ export default defineConfig({
     styleOverrides: {
       // You can also override styles
       borderRadius: '0',
-      codeBackground: 'gray',
       frames: {
         frameBoxShadowCssValue: 'none',
         borderColor: 'black',
