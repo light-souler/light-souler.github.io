@@ -38,6 +38,7 @@ export default defineConfig({
       borderRadius: '0.5rem',
       frames: {
         frameBoxShadowCssValue: 'none',
+        borderColor: 'black',
       },
     },
   }), mdx()],
