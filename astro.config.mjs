@@ -32,7 +32,7 @@ export default defineConfig({
       "@/shortcodes/Tabs",
       "@/shortcodes/Tab",
     ],
-  }), mdx(), expressiveCode()],
+  }), expressiveCode(), mdx()],
   markdown: {
     remarkPlugins: [
       remarkToc,
