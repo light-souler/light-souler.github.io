@@ -32,7 +32,15 @@ export default defineConfig({
       "@/shortcodes/Tabs",
       "@/shortcodes/Tab",
     ],
-  }), expressiveCode(), mdx()],
+  }), expressiveCode({
+    styleOverrides: {
+      // You can also override styles
+      borderRadius: '0.5rem',
+      frames: {
+        shadowColor: '#124',
+      },
+    },
+  }), mdx()],
   markdown: {
     remarkPlugins: [
       remarkToc,
