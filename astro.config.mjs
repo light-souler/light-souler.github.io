@@ -43,6 +43,7 @@ export default defineConfig({
         editorBackground: '#00000007',
         editorTabBorderRadius: '0',
         borderRadius: '0',
+        inlineButtonBackgroundIdleOpacity: '0.85',
       },
     },
   }), mdx()],
