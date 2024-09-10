@@ -35,7 +35,8 @@ export default defineConfig({
   }), expressiveCode({
     styleOverrides: {
       // You can also override styles
-      borderRadius: '0.5rem',
+      borderRadius: '0',
+      codeBackground: 'gray',
       frames: {
         frameBoxShadowCssValue: 'none',
         borderColor: 'black',
