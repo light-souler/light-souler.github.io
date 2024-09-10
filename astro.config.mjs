@@ -37,6 +37,7 @@ export default defineConfig({
       // You can also override styles
       borderWidth: '3px',
       borderRadius: '0',
+      inlineButtonBackgroundIdleOpacity: '0.2',
       frames: {
         frameBoxShadowCssValue: 'none',
         editorBackground: '#00000007',
