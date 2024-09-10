@@ -8,6 +8,8 @@ import remarkCollapse from "remark-collapse";
 import remarkToc from "remark-toc";
 import config from "./src/config/config.json";
 
+import expressiveCode from "astro-expressive-code";
+
 // https://astro.build/config
 export default defineConfig({
   site: config.site.base_url,
@@ -16,27 +18,21 @@ export default defineConfig({
   image: {
     service: squooshImageService(),
   },
-  integrations: [
-    react(),
-    sitemap(),
-    tailwind({
-      config: {
-        applyBaseStyles: false,
-      },
-    }),
-    AutoImport({
-      imports: [
-        "@/shortcodes/Button",
-        "@/shortcodes/Accordion",
-        "@/shortcodes/Notice",
-        "@/shortcodes/Video",
-        "@/shortcodes/Youtube",
-        "@/shortcodes/Tabs",
-        "@/shortcodes/Tab",
-      ],
-    }),
-    mdx(),
-  ],
+  integrations: [react(), sitemap(), tailwind({
+    config: {
+      applyBaseStyles: false,
+    },
+  }), AutoImport({
+    imports: [
+      "@/shortcodes/Button",
+      "@/shortcodes/Accordion",
+      "@/shortcodes/Notice",
+      "@/shortcodes/Video",
+      "@/shortcodes/Youtube",
+      "@/shortcodes/Tabs",
+      "@/shortcodes/Tab",
+    ],
+  }), mdx(), expressiveCode()],
   markdown: {
     remarkPlugins: [
       remarkToc,
