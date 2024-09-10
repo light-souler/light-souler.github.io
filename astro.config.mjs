@@ -36,12 +36,12 @@ export default defineConfig({
     styleOverrides: {
       // You can also override styles
       borderWidth: '3px',
-      borderRadius: '0rem',
+      borderRadius: '0',
       frames: {
         frameBoxShadowCssValue: 'none',
         editorBackground: '#00000007',
         editorTabBorderRadius: '0',
-        
+        borderRadius: '0',
       },
     },
   }), mdx()],
