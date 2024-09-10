@@ -48,7 +48,7 @@ export default defineConfig({
       ],
     ],
     shikiConfig: {
-      theme: "github-light",
+      theme: "one-light",
       wrap: true,
     },
     extendDefaultPlugins: true,
