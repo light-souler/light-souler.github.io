@@ -1,5 +1,5 @@
 ---
-title: "How to make toys from old Olarpaper [new]"
+title: "How to make toys from old Olarpaper [1]"
 description: "meta description"
 date: 2022-04-01T05:00:00Z
 image: "/images/posts/01.jpg"
@@ -13,7 +13,7 @@ Nemo vel ad consectetur namut rutrum ex, venenatis sollicitudin urna. Aliquam er
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vel ad consectetur ut aperiam. Itaque eligendi natus aperiam? Excepturi repellendus consequatur quibusdam optio expedita praesentium est adipisci dolorem ut eius!
 
-## Creative Design [new]
+## Creative Design [1]
 
 Nam ut rutrum ex, venenatis sollicitudin urna. Aliquam erat volutpat. Integer eu ipsum sem. Ut bibendum lacus vestibulum maximus suscipit. Quisque vitae nibh iaculis neque blandit euismod.
 
