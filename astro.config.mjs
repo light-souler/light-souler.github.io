@@ -37,7 +37,7 @@ export default defineConfig({
       // You can also override styles
       borderRadius: '0.5rem',
       frames: {
-        shadowColor: 'transparent',
+        frameBoxShadowCssValue: 'none',
       },
     },
   }), mdx()],
