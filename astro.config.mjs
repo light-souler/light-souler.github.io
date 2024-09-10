@@ -35,9 +35,9 @@ export default defineConfig({
   }), expressiveCode({
     styleOverrides: {
       // You can also override styles
+      borderWidth: '3px',
+      borderRadius: '0rem',
       frames: {
-        borderWidth: '3px',
-        borderRadius: '0rem',
         frameBoxShadowCssValue: 'none',
         editorBackground: '#b3b6b42e',
         editorTabBorderRadius: '0',
