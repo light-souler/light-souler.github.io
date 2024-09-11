@@ -48,6 +48,9 @@ module.exports = {
         border: theme.colors.default.theme_color.border,
         "theme-light": theme.colors.default.theme_color.theme_light,
         "theme-dark": theme.colors.default.theme_color.theme_dark,
+        cyan: {
+          70: 'rgb(225, 248, 255)',
+        },
       },
       fontSize: {
         base: font_base + "px",
