@@ -121,7 +121,7 @@
 
 // accordion
 .accordion {
-  @apply mb-6 overflow-hidden rounded-lg border border-border bg-theme-light;
+  @apply mb-6 overflow-hidden rounded-none border border-border bg-theme-light;
   &-header {
     @apply flex w-full cursor-pointer items-center justify-between px-8 py-4 text-lg text-dark;
   }
