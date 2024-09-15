@@ -3,9 +3,9 @@
 }
 
 .btn-primary {
-  @apply bg-primary text-white hover:text-white;
+  @apply border-1.4 bg-white text-dark hover:text-dark hover:bg-teal-100;
 }
 
 .btn-outline-primary {
-  @apply border-primary bg-transparent hover:bg-primary hover:text-white;
+  @apply border-1.4 bg-white text-dark hover:text-dark hover:bg-teal-100;
 }
