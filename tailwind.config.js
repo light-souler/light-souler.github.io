@@ -55,6 +55,9 @@ module.exports = {
           150: 'rgb(165 220 215)',
         }
       },
+      borderWidth: {
+        '1.4': '1.4px',
+      },
       fontSize: {
         base: font_base + "px",
         h1: h1 + "rem",
