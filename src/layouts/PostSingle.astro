@@ -105,8 +105,9 @@ const { title, description, authors, categories, image, date, tags } =
                     href={`/tags/${slugify(tag)}`}
                     class="block rounded-none border-black border-1.4 px-4 py-2 font-semibold text-dark text-sm hover:text-primary transition duration-300"
                   >
-                   <RiHashtag />{humanize(tag)}
-                  </a>
+                   <RiHashtag className="mr-0 text-dark group-hover:text-dark transition h-6 w-6 scale-75"/>
+                   <>{humanize(tag)}</>
+                  </a>                  
                 </li>
               ))
             }
