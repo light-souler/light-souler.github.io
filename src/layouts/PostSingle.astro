@@ -100,7 +100,7 @@ const { title, description, authors, categories, image, date, tags } =
           <ul class="mr-4 mb-4 space-x-3">
             {
               tags.map((tag: string) => (
-                <li class="inline-block">
+                <li class="inline-block fex items-center justify-between">
                   <RiHashtag className="mr-0 text-dark group-hover:text-primary transition h-6 w-6 scale-75"/>
                   <a
                     href={`/tags/${slugify(tag)}`}
