@@ -3,7 +3,7 @@ import Base from "@/layouts/Base.astro";
 import { getTaxonomy } from "@/lib/taxonomyParser.astro";
 import { humanize } from "@/lib/utils/textConverter";
 
-import { FaHashtag } from "react-icons/fa";
+import { PiTag } from "react-icons/pi";
 
  
 
@@ -22,7 +22,7 @@ const tags = await getTaxonomy("posts", "tags");
                 href={`/tags/${tag}`}
                 class="rounded-none border-black border-1.4 px-4 py-2 text-dark transition hover:bg-teal-100 hover:text-dark flex items-center group"
               >
-                <FaHashtag className="mr-1 text-dark group-hover:text-dark transition" />
+                <PiTag className="mr-1 text-dark group-hover:text-dark transition" />
                 <>{humanize(tag || "")}</>
               </a>
             </li>
