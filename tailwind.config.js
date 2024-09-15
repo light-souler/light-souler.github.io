@@ -51,6 +51,9 @@ module.exports = {
         cyan: {
           70: 'rgb(225, 248, 255)',
         },
+        teal: {
+          150: 'rgb(165 220 215)',
+        }
       },
       fontSize: {
         base: font_base + "px",
