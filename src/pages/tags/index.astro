@@ -20,7 +20,7 @@ const tags = await getTaxonomy("posts", "tags");
                 href={`/tags/${tag}`}
                 class="rounded-none border-black border-1.4 px-4 py-2 text-dark transition hover:bg-teal-100 hover:text-dark flex items-center group"
               >
-                <FaHashtag className="mr-1 text-primary group-hover:text-white transition" />
+                <FaHashtag className="mr-1 text-dark group-hover:text-dark transition" />
                 <>{humanize(tag || "")}</>
               </a>
             </li>
