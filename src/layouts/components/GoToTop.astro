@@ -1,0 +1,57 @@
+---
+// src/components/GoToTop.astro
+---
+<html>
+<head>
+  <style>
+    .scroll-to-top {
+      display: none;
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      background-color: #000;
+      color: #fff;
+      border-radius: 50%;
+      width: 3rem;
+      height: 3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      transition: opacity 0.3s;
+    }
+    .scroll-to-top.show {
+      display: flex;
+    }
+  </style>
+</head>
+<body>
+  <!-- Go to Top Button -->
+  <div id="goToTop" class="scroll-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+
+  <script type="module">
+    // JavaScript for showing and hiding the button, and scrolling to top
+    document.addEventListener('DOMContentLoaded', () => {
+      const goToTopButton = document.getElementById('goToTop');
+      
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+          goToTopButton.classList.add('show');
+        } else {
+          goToTopButton.classList.remove('show');
+        }
+      });
+
+      goToTopButton.addEventListener('click', () => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,5 +1,6 @@
 ---
 import TwSizeIndicator from "@/components/TwSizeIndicator.astro";
+import GoToTop from '@/components/GoToTop.astro';
 import config from "@/config/config.json";
 import theme from "@/config/theme.json";
 import { plainify } from "@/lib/utils/textConverter";
@@ -175,6 +176,7 @@ const { title, meta_title, description, image, noindex, canonical } =
     <main id="main-content" class="min-h-[60vh]">
       <slot />
     </main>
+     <GoToTop />
      <!-- <Footer/> - unused footer -->
   </body>
 </html>
