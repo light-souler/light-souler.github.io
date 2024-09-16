@@ -101,17 +101,39 @@ const { title, description, authors, categories, image, date, tags } =
             {
               tags.map((tag: string) => (
                 <li class="inline-block fex items-center justify-between">
-                  <RiHashtag className="mr-0 text-dark group-hover:text-primary transition h-6 w-6 scale-75"/>
                   <a
                     href={`/tags/${slugify(tag)}`}
-                    class="block rounded-none border-black border-1.4 px-4 py-2 font-semibold text-dark text-sm hover:text-primary transition duration-300"
+                    class="rounded-none px-4 py-2 font-semibold text-dark text-sm hover:text-primary transition duration-300"
                   >
+                   <RiHashtag className="mr-0 text-dark group-hover:text-dark transition" />
                    <>{humanize(tag)}</>
                   </a>                  
                 </li>
               ))
             }
           </ul>
+
+<!-- similar posts 
+<div class="container text-center">
+      <h1 class="h2 page-heading">Tags</h1>
+      <ul class="space-x-4">
+        {
+          tags.map((tag) => (
+            <li class="inline-block pb-5">
+              <a
+                href={`/tags/${tag}`}
+                class="rounded-none border-black border-1.4 px-4 py-2 text-dark transition hover:bg-teal-100 hover:text-dark flex items-center group"
+              >
+                <RiHashtag className="mr-0 text-dark group-hover:text-dark transition" />
+                <>{humanize(tag || "")}</>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+-->
+
           <Share
             className="social-share mb-4"
             title={title}
