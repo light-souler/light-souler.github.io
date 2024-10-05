@@ -13,7 +13,7 @@ import expressiveCode from "astro-expressive-code";
 import { pluginFramesTexts } from 'astro-expressive-code'
 
 // pluginFramesTexts.overrideTexts(undefined, {
-//   copyButtonCopied: '✔',
+  // copyButtonCopied: '✔',
 // })
 
 // https://astro.build/config
@@ -39,7 +39,7 @@ export default defineConfig({
       "@/shortcodes/Tab",
     ],
   }), expressiveCode({
-    themes: ['snazzy-light'],
+    themes: ['dracula'],
     styleOverrides: {
       // You can also override styles
       borderWidth: '3px',
