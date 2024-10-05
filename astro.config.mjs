@@ -50,6 +50,23 @@ export default defineConfig({
         editorTabBorderRadius: '0',
         borderRadius: '0',
       },
+
+      plugins: [
+        // ... your other plugins ...
+        {
+          name: 'Custom Copy Button Feedback',
+          baseStyles: `
+            .copy .feedback {
+              display: none;
+      
+              & + button::after {
+                -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='black' stroke='none' stroke-width='1.75'%3E%3Cpath d='M9 21.035l-9-8.638 2.791-2.87 6.156 5.874 12.21-12.436 2.843 2.817z'/%3E%3C/svg%3E");
+                mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='black' stroke='none' stroke-width='1.75'%3E%3Cpath d='M9 21.035l-9-8.638 2.791-2.87 6.156 5.874 12.21-12.436 2.843 2.817z'/%3E%3C/svg%3E");
+              }
+            }
+          `,
+        },
+      ],
     },
   }), mdx()],
   markdown: {
