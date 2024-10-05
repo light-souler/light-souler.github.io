@@ -52,7 +52,7 @@ export default defineConfig({
        
       frames: {
         frameBoxShadowCssValue: 'none',
-        editorBackground: '#00000007',
+        editorBackground: '#698adb',
         editorTabBorderRadius: '0',
         borderRadius: '0',
       },
