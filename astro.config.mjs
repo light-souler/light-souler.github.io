@@ -43,7 +43,7 @@ export default defineConfig({
     styleOverrides: {
       // You can also override styles
       borderWidth: '1.4px',
-      borderColor: 'Black',
+      borderColor: 'Gray',
       borderRadius: '0',
        
       frames: {
