@@ -10,6 +10,12 @@ import config from "./src/config/config.json";
 
 import expressiveCode from "astro-expressive-code";
 
+import { pluginFramesTexts } from 'astro-expressive-code'
+
+pluginFramesTexts.overrideTexts(undefined, {
+  copyButtonCopied: '✔',
+})
+
 // https://astro.build/config
 export default defineConfig({
   site: config.site.base_url,
