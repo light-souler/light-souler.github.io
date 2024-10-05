@@ -12,6 +12,7 @@ import expressiveCode from "astro-expressive-code";
 
 import { pluginFramesTexts } from 'astro-expressive-code'
 
+// remove "copy to clipboard" text when hover to Expressive-Code Copy button
 pluginFramesTexts.overrideTexts(undefined, {
   copyButtonTooltip: ' ',
 })
@@ -64,6 +65,7 @@ export default defineConfig({
           @media (hover: hover) {
             .copy button {
               opacity: 0.75;
+              border-radius: 0;
             }
           }
         `,
