@@ -42,7 +42,8 @@ export default defineConfig({
     themes: ['light-plus'],
     styleOverrides: {
       // You can also override styles
-      borderWidth: '3px',
+      borderWidth: '1.4px',
+      borderColor: 'Black',
       borderRadius: '0',
        
       frames: {
