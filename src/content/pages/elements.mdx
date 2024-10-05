@@ -129,6 +129,83 @@ window.addEventListener("load", (e) => {
 });
 ```
 
+```example.js
+function isEven(num) {
+  return num % 2 === 0;
+}
+
+// Testing the function
+const num = 4;
+if (isEven(num)) {
+  console.log(`${num} is even.`);
+} else {
+  throw new Error('Wait, what?');
+}
+```
+
+#### PHP
+
+```example.php
+<?php
+  $x = new stdClass();
+  $x->key = 'key';
+  $x->value_integer = 10;
+  $x->value_array = [
+    1, 
+    '2', 
+    "3", 
+    100.25, 
+    (object) ['key1' => 'val1']
+    "key" => "value",
+  ];
+
+  echo Welcome::show();
+
+  $x = new Welcome();
+
+  echo $x->info();
+
+  function element(string $s, int $i, float $f, array $a, object $o)
+  {
+
+  }
+
+  class Welcome
+  {
+    public static function show()
+    {
+      return "welcome";
+    }
+
+    public function info()
+    {
+      return "info";
+    }
+  }
+
+?>
+```
+
+### MYSQL
+
+```example.mysql
+  SELECT 
+    t1.userId, 
+    COUNT(t2.amount) totalAmount 
+  FROM TABLE table1 t1
+  LEFT JOIN table2 t2 
+    ON t1.userId = t2.userId
+    AND t1.valid = 1
+  WHERE
+    t2.active = 1
+  ORDER BY 
+    t2.order ASC, t2.level ASC
+  GROUP BY 
+    t1.userId
+  HAVING 
+    totalAmount > 0;
+```
+
 ---
 
 ### Button

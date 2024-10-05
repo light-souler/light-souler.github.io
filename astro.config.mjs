@@ -39,7 +39,7 @@ export default defineConfig({
       "@/shortcodes/Tab",
     ],
   }), expressiveCode({
-    themes: ['dracula'],
+    themes: ['light-plus'],
     styleOverrides: {
       // You can also override styles
       borderWidth: '3px',
