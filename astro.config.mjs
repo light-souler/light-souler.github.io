@@ -12,9 +12,9 @@ import expressiveCode from "astro-expressive-code";
 
 import { pluginFramesTexts } from 'astro-expressive-code'
 
-// pluginFramesTexts.overrideTexts(undefined, {
-  // copyButtonCopied: '✔',
-// })
+pluginFramesTexts.overrideTexts(undefined, {
+  copyButtonTooltip: ' ',
+})
 
 // https://astro.build/config
 export default defineConfig({
@@ -58,14 +58,36 @@ export default defineConfig({
     },
 
     plugins: [
-      // ... your other plugins ...
+      {
+        name: 'Always Show Copy Button',
+        baseStyles: `
+          @media (hover: hover) {
+            .copy button {
+              opacity: 0.75;
+            }
+          }
+        `,
+      },
+      // {
+      //   name: 'Custom Copy Button Feedback',
+      //   baseStyles: `
+      //     .copy .feedback {
+      //       display: none;
+    
+      //       & + button::after {
+      //         -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='black' stroke='none' stroke-width='1.75'%3E%3Cpath d='M9 21.035l-9-8.638 2.791-2.87 6.156 5.874 12.21-12.436 2.843 2.817z'/%3E%3C/svg%3E");
+      //         mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='black' stroke='none' stroke-width='1.75'%3E%3Cpath d='M9 21.035l-9-8.638 2.791-2.87 6.156 5.874 12.21-12.436 2.843 2.817z'/%3E%3C/svg%3E");
+      //       }
+      //     }
+      //   `,
+      // },
       {
         name: 'Custom Copy Button Feedback',
         baseStyles: `
           .copy .feedback {
             display: none;
     
-            & + button::after {
+            &.show + button::after {
               -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='black' stroke='none' stroke-width='1.75'%3E%3Cpath d='M9 21.035l-9-8.638 2.791-2.87 6.156 5.874 12.21-12.436 2.843 2.817z'/%3E%3C/svg%3E");
               mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='black' stroke='none' stroke-width='1.75'%3E%3Cpath d='M9 21.035l-9-8.638 2.791-2.87 6.156 5.874 12.21-12.436 2.843 2.817z'/%3E%3C/svg%3E");
             }
