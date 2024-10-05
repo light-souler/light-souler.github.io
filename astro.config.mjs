@@ -45,11 +45,13 @@ export default defineConfig({
       borderWidth: '1.4px',
       borderColor: 'Gray',
       borderRadius: '0',
+
+      inlineButtonRadius: '0',
+      inlineMarkerBorderRadius: '0',
        
       frames: {
         frameBoxShadowCssValue: 'none',
         // editorBackground: '#00000007',
-        inlineButtonRadius: '0',
         editorTabBorderRadius: '0',
         borderRadius: '0',
       },
