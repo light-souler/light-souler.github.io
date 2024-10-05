@@ -47,7 +47,7 @@ export default defineConfig({
        
       frames: {
         frameBoxShadowCssValue: 'none',
-        editorBackground: '#00000007',
+        // editorBackground: '#00000007',
         editorTabBorderRadius: '0',
         borderRadius: '0',
       },
@@ -81,7 +81,7 @@ export default defineConfig({
       ],
     ],
     shikiConfig: {
-      theme: "one-light",
+      // theme: "one-light",
       wrap: true,
     },
     extendDefaultPlugins: true,
