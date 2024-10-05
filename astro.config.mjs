@@ -52,7 +52,7 @@ export default defineConfig({
        
       frames: {
         frameBoxShadowCssValue: 'none',
-        // editorBackground: '#00000007',
+        editorBackground: '#00000007',
         editorTabBorderRadius: '0',
         borderRadius: '0',
       },
@@ -60,7 +60,7 @@ export default defineConfig({
 
     plugins: [
       {
-        name: 'Always Show Copy Button',
+        name: 'Always Show Copy Button (with border style)',
         baseStyles: `
           @media (hover: hover) {
             .copy button {
