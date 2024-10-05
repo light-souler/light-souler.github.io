@@ -39,7 +39,7 @@ export default defineConfig({
       "@/shortcodes/Tab",
     ],
   }), expressiveCode({
-    themes: [snazzy-light],
+    themes: ['snazzy-light'],
     styleOverrides: {
       // You can also override styles
       borderWidth: '3px',
