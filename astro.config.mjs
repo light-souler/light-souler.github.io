@@ -49,6 +49,7 @@ export default defineConfig({
       frames: {
         frameBoxShadowCssValue: 'none',
         // editorBackground: '#00000007',
+        inlineButtonRadius: '0',
         editorTabBorderRadius: '0',
         borderRadius: '0',
       },
