@@ -52,7 +52,7 @@ export default defineConfig({
        
       frames: {
         frameBoxShadowCssValue: 'none',
-        editorBackground: 'floralwhite',
+        editorBackground: 'ghostwhite',
         editorTabBorderRadius: '0',
         borderRadius: '0',
       },
@@ -66,7 +66,7 @@ export default defineConfig({
             .copy button {
               opacity: 1;
               border-radius: 0;
-              border-color: Gray;
+              border-color: ghostwhite;
             }
           }
         `,
